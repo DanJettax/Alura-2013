@@ -13,6 +13,6 @@ $conta = new ContaPoupanca(
     )
 );
 $conta->deposita(500);
-$conta->saca(100);
+$conta->saca(650);
 
 echo $conta->recuperaSaldo();
