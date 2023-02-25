@@ -6,6 +6,7 @@ final class CPF
 {
     private $numero;
 
+
     public function __construct(string $numero)
     {
         $numero = filter_var($numero, FILTER_VALIDATE_REGEXP, [
@@ -19,6 +20,8 @@ final class CPF
             exit();
         }
         $this->numero = $numero;
+
+
     }
 
     public function recuperaNumero(): string

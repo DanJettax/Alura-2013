@@ -11,5 +11,4 @@ class saldoInsuficienteException extends \DomainException
        $mensagem = "Você tentou sacar $valorSaque, mas tem apenas $saldoAtual em conta.";
        parent::__construct($mensagem);
    }
-
 }
